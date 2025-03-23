@@ -37,10 +37,10 @@ screenOptions={ {
         paddingTop: insets.top,
         paddingBottom: insets.bottom
     },
-    headerShown: false
+    // headerShown: false
 }}
 >
-    <Stack.Screen name="index"/>
+    <Stack.Screen name="login"/>
     <Stack.Screen name="restore" options={{
         presentation: 'card'
     }}/>
