@@ -1,8 +1,11 @@
 import { atom } from "jotai";
-import { User } from "./user.model";
+import  User  from "./user.model";
 
-export const profileAtom = atom<UserState>({
-    profile: null,
+  const profileAtom = atom<UserState>({
+    profile: {
+        id: 1,
+        name: 'Nikita'
+    },
     isLoading: false,
     error: null
 })
@@ -13,3 +16,5 @@ export interface UserState {
     error: string | null;
 }
 
+
+export default profileAtom
